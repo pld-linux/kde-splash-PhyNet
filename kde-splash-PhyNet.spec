@@ -13,7 +13,8 @@ Source0:	5549-phynet%{version}.tgz
 # Source0-md5: 9de90099d97648e3c6e79112fb559ff7
 Source1:	%{name}-themerc
 URL:		http://www.kdelook.org/content/download.php?content=5549
-Requires:	kdebase >= 8:3.2-0.030410
+Requires:	kdebase-desktop
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
