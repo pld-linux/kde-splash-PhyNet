@@ -23,19 +23,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Ekran startowy KDE "PhyNet".
 
 %prep
-%setup  -q -n pics
-
-%build
+%setup -q -n pics
 
 %install
 rm -rf $RPM_BUILD_ROOT
+install -d $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
 
-install -d $RPM_BUILD_ROOT/%{_datadir}/apps/ksplash/Themes/%{_splash}
-
-cp * $RPM_BUILD_ROOT/%{_datadir}/apps/ksplash/Themes/%{_splash}
+cp * $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}
 
 install %{SOURCE1} \
-    $RPM_BUILD_ROOT/%{_datadir}/apps/ksplash/Themes/%{_splash}/Theme.rc
+    $RPM_BUILD_ROOT%{_datadir}/apps/ksplash/Themes/%{_splash}/Theme.rc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
