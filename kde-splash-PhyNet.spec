@@ -5,7 +5,7 @@ Summary:	KDE splash screen
 Summary(pl):	Ekran startowy KDE
 Name:		kde-splash-%{_splash}
 Version:	01
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Amusements
 #Source0:	http://www.kde-look.org/content/download.php?content=1706
@@ -14,15 +14,15 @@ Source0:	5549-phynet%{version}.tgz
 Source1:	%{name}-Preview.png
 Source2:	%{name}-Theme.rc
 URL:		http://www.kde-look.org/content/show.php?content=5549
-Requires:	kdebase-desktop
+Requires:	kdebase-desktop >= 9:3.2.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-"PhyNet" KDE splash screen.
+"PhyNet" is a splash screen for the phy.net website and contains a picture of woman in biking.
 
 %description -l pl
-Ekran startowy KDE "PhyNet".
+Ekran startowy KDE "PhyNet" ku reklamie strony phy.net zawiera obrazek kobiety w bikini.
 
 %prep
 %setup -q -n pics
