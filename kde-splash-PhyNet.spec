@@ -10,7 +10,7 @@ License:	GPL
 Group:		X11/Amusements
 #Source0:	http://www.kde-look.org/content/download.php?content=1706
 Source0:	5549-phynet%{version}.tgz
-# Source0-md5: 9de90099d97648e3c6e79112fb559ff7
+# Source0-md5:	9de90099d97648e3c6e79112fb559ff7
 Source1:	%{name}-Preview.png
 Source2:	%{name}-Theme.rc
 URL:		http://www.kde-look.org/content/show.php?content=5549
