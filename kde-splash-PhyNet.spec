@@ -19,10 +19,12 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-"PhyNet" is a splash screen for the phy.net website and contains a picture of woman in biking.
+"PhyNet" is a splash screen for the phy.net website and contains a
+picture of woman in biking.
 
 %description -l pl
-Ekran startowy KDE "PhyNet" ku reklamie strony phy.net zawiera obrazek kobiety w bikini.
+Ekran startowy KDE "PhyNet" ku reklamie strony phy.net zawiera obrazek
+kobiety w bikini.
 
 %prep
 %setup -q -n pics
