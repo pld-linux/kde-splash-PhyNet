@@ -2,7 +2,7 @@
 %define		_splash		PhyNet
 
 Summary:	KDE splash screen
-Summary(pl):	Ekran startowy KDE
+Summary(pl.UTF-8):   Ekran startowy KDE
 Name:		kde-splash-%{_splash}
 Version:	01
 Release:	1
@@ -20,7 +20,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 "PhyNet" KDE splash screen.
 
-%description -l pl
+%description -l pl.UTF-8
 Ekran startowy KDE "PhyNet".
 
 %prep
